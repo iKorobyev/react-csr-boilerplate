@@ -42,7 +42,7 @@ const defaultValues = {
 
 module.exports = {
   mode: "jit",
-  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./src/**/**/*.{js,jsx,ts,tsx}"],
+  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: "class",
   theme: {
     boxShadow: {
@@ -215,5 +215,5 @@ module.exports = {
       pointerEvents: ["disabled"],
     },
   },
-  plugins: [require("@tailwindcss/line-clamp")],
+  // plugins: [require("@tailwindcss/line-clamp")],
 };
